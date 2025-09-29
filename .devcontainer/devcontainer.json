@@ -1,0 +1,21 @@
+{
+  "name": "ThrottleOps Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm i -g pnpm && pnpm --version && git config --global pull.rebase false",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "mongodb.mongodb-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [5000, 5173],
+  "portsAttributes": {
+    "5000": { "label": "ThrottleOps API" },
+    "5173": { "label": "ThrottleOps Web" }
+  },
+  "remoteUser": "node"
+}
