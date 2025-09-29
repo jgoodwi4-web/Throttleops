@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { requireAuth, requireRole } from "../middleware/authMiddleware.js";
+import { listDrivers, createDriver, updateDriver, deleteDriver } from "../controllers/driverController.js";
+const r = Router();
+r.use(requireAuth);
+r.get("/", listDrivers);
+r.post("/", requireRole("admin","dispatcher"), createDriver);
+r.patch("/:id", requireRole("admin","dispatcher"), updateDriver);
+r.delete("/:id", requireRole("admin"), deleteDriver);
+export default r;

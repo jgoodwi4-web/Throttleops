@@ -1,0 +1,23 @@
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial}
+.layout{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.sidebar{background:#0f172a;color:#fff;padding:18px 14px;display:flex;flex-direction:column;gap:10px}
+.sidebar h2{margin:2px 0 10px 0}
+.sidebar a{color:#dbeafe;text-decoration:none;display:block;padding:6px 8px;border-radius:8px}
+.sidebar a:hover{background:#1e293b}
+.logout{margin-top:auto;background:#334155;color:#fff;border:0;padding:8px 10px;border-radius:8px;cursor:pointer}
+.content{padding:20px}
+.center{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{width:360px;display:grid;gap:10px;padding:20px;border:1px solid #e5e7eb;border-radius:12px}
+input,button,select{padding:10px;border:1px solid #cbd5e1;border-radius:8px}
+button{cursor:pointer;background:#2563eb;color:#fff;border:0}
+button:hover{background:#1d4ed8}
+.row,.grid{display:grid;gap:8px}
+.row{grid-template-columns:1fr 1fr auto}
+.grid{grid-template-columns:repeat(4,1fr)}
+.table{width:100%;border-collapse:collapse;margin-top:10px}
+.table th,.table td{border:1px solid #e5e7eb;padding:8px;text-align:left}
+.error{color:#b91c1c}
+.callout{margin-top:8px;padding:10px;border:1px dashed #94a3b8;border-radius:8px;background:#f8fafc}
+.search{width:100%;margin-top:8px}
+.num{display:grid}
+.hint{opacity:.7;font-size:12px}

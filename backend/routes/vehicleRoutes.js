@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { requireAuth, requireRole } from "../middleware/authMiddleware.js";
+import { listVehicles, createVehicle, updateVehicle, deleteVehicle } from "../controllers/vehicleController.js";
+const r = Router();
+r.use(requireAuth);
+r.get("/", listVehicles);
+r.post("/", requireRole("admin","dispatcher"), createVehicle);
+r.patch("/:id", requireRole("admin","dispatcher"), updateVehicle);
+r.delete("/:id", requireRole("admin"), deleteVehicle);
+export default r;

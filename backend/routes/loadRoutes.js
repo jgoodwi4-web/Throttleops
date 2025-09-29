@@ -1,0 +1,11 @@
+import { Router } from "express";
+import { requireAuth } from "../middleware/authMiddleware.js";
+import { listLoads, createLoad, getLoad, updateLoad, trackPing } from "../controllers/loadController.js";
+const r = Router();
+r.use(requireAuth);
+r.get("/", listLoads);
+r.post("/", createLoad);
+r.get("/:id", getLoad);
+r.patch("/:id", updateLoad);
+r.post("/:id/track", trackPing);
+export default r;

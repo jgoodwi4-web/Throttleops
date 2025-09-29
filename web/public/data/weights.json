@@ -1,0 +1,123 @@
+[
+  {
+    "cat": "equipment",
+    "name": "Skid Steer (compact class)",
+    "typical_lb": 2795,
+    "range_lb": [
+      2600,
+      3200
+    ]
+  },
+  {
+    "cat": "equipment",
+    "name": "Mini Excavator 3.5T",
+    "typical_lb": 7716,
+    "range_lb": [
+      7400,
+      8500
+    ]
+  },
+  {
+    "cat": "equipment",
+    "name": "Backhoe (full-size)",
+    "typical_lb": 17000,
+    "range_lb": [
+      15000,
+      19000
+    ]
+  },
+  {
+    "cat": "equipment",
+    "name": "Forklift 5k",
+    "typical_lb": 9000,
+    "range_lb": [
+      8000,
+      10000
+    ]
+  },
+  {
+    "cat": "vehicle",
+    "name": "Half-ton Pickup (4x4 crew)",
+    "typical_lb": 5200,
+    "range_lb": [
+      4800,
+      5600
+    ]
+  },
+  {
+    "cat": "vehicle",
+    "name": "3/4-ton Pickup (4x4 crew)",
+    "typical_lb": 6400,
+    "range_lb": [
+      6000,
+      7000
+    ]
+  },
+  {
+    "cat": "trailer",
+    "name": "Gooseneck 30' (2x10k axles)",
+    "typical_lb": 6200,
+    "gvwr_lb": 20000
+  },
+  {
+    "cat": "trailer",
+    "name": "Utility Trailer 7x16",
+    "typical_lb": 1800,
+    "gvwr_lb": 7000
+  },
+  {
+    "cat": "camper",
+    "name": "5th Wheel 35'",
+    "dry_lb": 11000,
+    "gvwr_lb": 14000
+  },
+  {
+    "cat": "camper",
+    "name": "Travel Trailer 28'",
+    "dry_lb": 6000,
+    "gvwr_lb": 8800
+  },
+  {
+    "cat": "material",
+    "name": "2x4x8 SPF lumber",
+    "per_piece_lb": 10
+  },
+  {
+    "cat": "material",
+    "name": "3/4\" Plywood 4x8",
+    "per_sheet_lb": 60
+  },
+  {
+    "cat": "steel",
+    "name": "Steel Plate 1/4\" (4x8)",
+    "per_sheet_lb": 326
+  },
+  {
+    "cat": "steel",
+    "name": "Square Tube 2x2x.125 (20 ft)",
+    "per_piece_lb": 68
+  },
+  {
+    "cat": "pipe",
+    "name": "Schedule 40 Steel Pipe 2\" (20 ft)",
+    "per_piece_lb": 53
+  },
+  {
+    "cat": "aggregate",
+    "name": "#57 Limestone",
+    "density_lb_ft3": 95,
+    "notes": "\u22481.28 tons/yd\u00b3"
+  },
+  {
+    "cat": "aggregate",
+    "name": "Concrete (normal)",
+    "density_lb_ft3": 150,
+    "notes": "\u22482.03 tons/yd\u00b3"
+  },
+  {
+    "cat": "aggregate",
+    "name": "Gravel (pea)",
+    "density_lb_ft3": 100,
+    "notes": "\u22481.35 tons/yd\u00b3"
+  }
+]
