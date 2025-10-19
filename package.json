@@ -1,0 +1,12 @@
+{
+  "name": "throttleops",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-local": "bash scripts/install-local.sh",
+    "start-local": "bash scripts/start-local.sh",
+    "stop-local": "bash scripts/stop-local.sh",
+    "preview-frontend": "bash scripts/preview-frontend.sh",
+    "seed-admin": "bash scripts/seed_admin.sh"
+  }
+}

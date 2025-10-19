@@ -1,0 +1,6 @@
+nohup: ignoring input
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 4173 is in use, trying another one...
+Port 4174 is in use, trying another one...
+  ➜  Local:   http://localhost:4175/
+  ➜  Network: use --host to expose
