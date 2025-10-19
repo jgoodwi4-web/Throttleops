@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+  mongo:
+    image: mongo:6
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+
+  api:
+    image: ${API_IMAGE:-ghcr.io/YOUR_ORG/throttleops-api:latest}
+    restart: unless-stopped
+    environment:
+      - MONGO_URI=${MONGO_URI:-mongodb://mongo:27017/throttleops}
+      - PORT=5000
+      - JWT_SECRET=${JWT_SECRET}
+      - DOTENV_PATH=/config/.env
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./config:/config
+    depends_on:
+      - mongo
+
+  web:
+    image: ${WEB_IMAGE:-ghcr.io/YOUR_ORG/throttleops-web:latest}
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=${VITE_API_BASE:-http://localhost:5000}
+    depends_on:
+      - api
+
+volumes:
+  mongo_data: {}
